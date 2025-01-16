@@ -4,7 +4,7 @@ import {toast, ToastContainer} from "react-toastify";
 export const App = () => {
   const [uploadedImage, setUploadedImage] = useState<string | null>(null);
   const [processedImage, setProcessedImage] = useState<string | null>(null);
-  const [tolerance, setTolerance] = useState<number>(240);
+  const [tolerance, setTolerance] = useState<number>(0);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const showToast = (message: string, error?: boolean) => {
     if (error) toast.error(message);
