@@ -48,7 +48,7 @@ export const App = () => {
 				fontFamily: "Arial, sans-serif",
 			}}
 		>
-			<h1>Remove (White) Pixel</h1>
+			<h1>Remove (White) Pixels</h1>
 
 			<div className="controls">
 				<div className="slider-container">
