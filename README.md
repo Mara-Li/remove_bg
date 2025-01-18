@@ -1,3 +1,5 @@
+https://project.mara-li.fr/remove_bg/
+
 Simple website that use React and Jimp to remove the white background under an image.
 
 i really dont understand why no simple website do that... like why i should use ai and paid for such a simple task ??
