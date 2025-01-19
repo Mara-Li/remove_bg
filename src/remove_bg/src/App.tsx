@@ -8,7 +8,7 @@ import {
 	processImage,
 } from "./utils";
 import "./App.css";
-import Meta from "./meta";
+import Meta from "../../Meta.tsx";
 
 export const App = () => {
 	const [uploadedImage, setUploadedImage] = useState<string | null>(null);
@@ -51,7 +51,7 @@ export const App = () => {
 				fontFamily: "Arial, sans-serif",
 			}}
 		>
-			<Meta />
+			<Meta project={"/remove_bg/"} />
 			<a
 				href="/"
 				className="home-button"
