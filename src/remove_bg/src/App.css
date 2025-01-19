@@ -151,3 +151,31 @@ h1 {
 		max-width: none;
 	}
 }
+
+.home-button {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	background-color: #ffffff; /* Fond blanc */
+	border: 2px solid #e1e8ed; /* Bordure douce */
+	border-radius: 50%; /* Bouton rond */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+	text-decoration: none; /* Supprime le soulignement */
+	transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.home-button:hover {
+	background-color: #f5f8fa; /* Changement de fond au survol */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+}
+
+.home-button svg {
+	color: #1da1f2; /* Bleu Twitter-like */
+	width: 24px;
+	height: 24px;
+}

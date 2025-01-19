@@ -1,5 +1,5 @@
 import { Jimp } from "jimp";
-import React from "react";
+import type React from "react";
 
 export const handleUploadClick = (
 	fileInputRef: React.RefObject<HTMLInputElement>,
@@ -41,10 +41,10 @@ export const processImage = async (
 		const replaceColor = { r: 0, g: 0, b: 0, a: 0 }; // Transparent
 		const colorDistance = (c1: typeof targetColor, c2: typeof targetColor) =>
 			Math.sqrt(
-				Math.pow(c1.r - c2.r, 2) +
-					Math.pow(c1.g - c2.g, 2) +
-					Math.pow(c1.b - c2.b, 2) +
-					Math.pow(c1.a - c2.a, 2),
+				(c1.r - c2.r) ** 2 +
+					(c1.g - c2.g) ** 2 +
+					(c1.b - c2.b) ** 2 +
+					(c1.a - c2.a) ** 2,
 			);
 
 		image.scan(0, 0, image.bitmap.width, image.bitmap.height, (_x, _y, idx) => {
