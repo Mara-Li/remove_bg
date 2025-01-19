@@ -8,6 +8,7 @@ import {
 	processImage,
 } from "./utils";
 import "./App.css";
+import Meta from "./meta";
 
 export const App = () => {
 	const [uploadedImage, setUploadedImage] = useState<string | null>(null);
@@ -50,6 +51,7 @@ export const App = () => {
 				fontFamily: "Arial, sans-serif",
 			}}
 		>
+			<Meta />
 			<a
 				href="/"
 				className="home-button"

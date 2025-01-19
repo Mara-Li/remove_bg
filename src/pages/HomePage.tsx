@@ -2,10 +2,12 @@ import type React from "react";
 import metadata from "../metadata.json"; // Charger les métadonnées
 import Card from "./Card";
 import "./HomePage.css";
+import Meta from "./meta.tsx";
 
 const HomePage: React.FC = () => {
 	return (
 		<div className="home-container">
+			<Meta />
 			<h1>Mara-Li's toolbox</h1>
 			<div className="card-container">
 				{metadata.map((data, index) => (
