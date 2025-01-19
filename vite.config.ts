@@ -8,6 +8,7 @@ export default defineConfig({
 		rollupOptions: {
 			input: {
 				main: resolve(__dirname, "index.html"), // Point d'entrée principal
+				remove_bg: resolve(__dirname, "remove_bg/index.html"), // Point d'entrée secondaire
 			},
 		},
 	},

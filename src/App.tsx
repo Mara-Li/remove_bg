@@ -10,7 +10,7 @@ const App: React.FC = () => {
 			<Router>
 				<Routes>
 					<Route path="/" element={<HomePage />} />
-					<Route path="/remove_bg" element={<RemoveBGApp />} />
+					<Route path="/remove_bg/" element={<RemoveBGApp />} />
 				</Routes>
 			</Router>
 		</HelmetProvider>
