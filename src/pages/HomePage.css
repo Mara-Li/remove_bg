@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
 .home-container {
 	text-align: center;
 	padding: 2rem;
@@ -46,6 +48,9 @@
 	height: auto; /* Ajuste automatiquement la hauteur */
 	object-fit: cover;
 	flex-shrink: 0; /* Garde l'image à sa taille */
+	margin: auto;
+	border-radius: 0;
+	box-shadow: none;
 }
 
 .card-content {
@@ -56,14 +61,16 @@
 .card-content h2 {
 	font-size: 1.4rem;
 	margin: 0;
-	color: #1a91da;
+	color: #1884ae;
 	text-transform: capitalize; /* Rend le texte plus stylisé */
+	font-family: "Karla", Aptos, "Arial Rounded MT Bold", Arial, sans-serif;
 }
 
 .card-content p {
 	font-size: 1rem;
 	color: #657786;
 	margin: 0.5rem 0;
+	font-family: "Dosis", Aptos, "Arial Rounded MT Bold", Arial, sans-serif;
 }
 
 /* RESPONSIVE DESIGN */
