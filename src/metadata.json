@@ -1,18 +1,18 @@
 [
-	{
-		"project": "/remove_bg/",
-		"description": "Remove white Pixels from images with ease! Upload or paste an image, adjust tolerance, and get your processed result. All is done in the browser, without AI, GMO and pesticide!",
-		"icon": "/assets/favicon.png",
-		"og_image": "/assets/og-image.png",
-		"url": "https://project.mara-li.fr/remove_bg/",
-		"title": "Remove White Pixel - Image Processing Tool"
-	},
-	{
-		"project": "/",
-		"title": "Mara-Li's toolbox",
-		"description": "Mara-Li's toolbox ; some little website that do stuff.",
-		"icon": "/assets/box.png",
-		"og_image": "https://www.blog.mara-li.fr/_assets/meta/avatar_index.gif",
-		"url": "https://project.mara-li.fr/"
-	}
+  {
+    "project": "/remove_bg/",
+    "title": "Remove (White) Pixel",
+    "description": "Remove white Pixels from images with ease! Upload or paste an image, adjust tolerance, and get your processed result. All is done in the browser, without AI, GMO and pesticide!",
+    "url": "https://project.mara-li.fr/remove_bg/",
+    "og_image": "/assets/og-image.png",
+    "icon": "/assets/favicon.png"
+  },
+  {
+    "project": "/",
+    "title": "Mara-Li's toolbox",
+    "description": "Mara-Li's toolbox ; some little website that do stuff.",
+    "url": "https://project.mara-li.fr/",
+    "og_image": "https://www.blog.mara-li.fr/_assets/meta/avatar_index.gif",
+    "icon": "/assets/box.png"
+  }
 ]

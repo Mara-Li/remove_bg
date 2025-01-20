@@ -8,12 +8,13 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-	max-width: 700px;
+	max-width: 900px; /* Augmenté pour grand écran */
 	margin: 0 auto;
+	padding: 1rem; /* Ajouté pour éviter que les cards collent aux bords */
 }
 
 .card-link {
-	text-decoration: none; /* Supprime le soulignement du lien */
+	text-decoration: none; /* Supprime le soulignement des liens */
 	color: inherit; /* Utilise les couleurs par défaut */
 	display: block;
 	transition: transform 0.2s ease-in-out;
@@ -25,13 +26,14 @@
 
 .card {
 	display: flex;
+	flex-wrap: wrap; /* Permet l'adaptation sur petits écrans */
 	align-items: flex-start;
 	border: 1px solid #e1e8ed;
 	border-radius: 8px;
 	overflow: hidden;
 	background-color: #ffffff;
 	text-align: left;
-	transition: box-shadow 0.2s ease-in-out;
+	transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .card-link:hover .card {
@@ -39,12 +41,11 @@
 }
 
 .card img {
-	width: 180px;
-	height: 180px;
+	width: 100%;
+	max-width: 180px;
+	height: auto; /* Ajuste automatiquement la hauteur */
 	object-fit: cover;
-	border-radius: 0;
-	box-shadow: none;
-	margin: auto;
+	flex-shrink: 0; /* Garde l'image à sa taille */
 }
 
 .card-content {
@@ -56,10 +57,42 @@
 	font-size: 1.4rem;
 	margin: 0;
 	color: #1a91da;
+	text-transform: capitalize; /* Rend le texte plus stylisé */
 }
 
 .card-content p {
 	font-size: 1rem;
 	color: #657786;
 	margin: 0.5rem 0;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+	.card-container {
+		padding: 0.5rem;
+	}
+
+	.card {
+		flex-direction: column; /* Empile le contenu sur petits écrans */
+		text-align: center; /* Recentre le contenu */
+	}
+
+	.card img {
+		width: 100%; /* L'image prend toute la largeur disponible */
+		max-width: none;
+	}
+
+	.card-content {
+		padding: 1rem 0.5rem; /* Réduit le padding sur petits écrans */
+	}
+}
+
+@media (max-width: 480px) {
+	.card-content h2 {
+		font-size: 1.2rem; /* Réduit la taille des titres sur mobiles */
+	}
+
+	.card-content p {
+		font-size: 0.9rem; /* Réduit la taille des descriptions */
+	}
 }
